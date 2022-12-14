@@ -5,6 +5,12 @@ const cors = require('cors');
 
 app.use(cors());
 
+app.use((req, res, next) => {
+  res.header('Access-Control_Allow-Origin', '*')
+  res.header('Access-Conrol-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
 const doraemon = {
   'doraemon': {
     'age': 11,

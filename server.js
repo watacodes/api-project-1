@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 8000;
+const cors = require('cors');
 
 const doraemon = {
   'doraemon': {
@@ -34,6 +35,6 @@ app.get('/api/:characterName', (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`The server is running on ${PORT}!`);
 });

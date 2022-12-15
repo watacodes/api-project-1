@@ -15,16 +15,19 @@ app.use('/static', express.static('./static/'));
 
 const doraemon = {
   'doraemon': {
+    'name': 'Doraemon',
     'age': 11,
     'species': 'Robot cat',
     'favorite food': 'Dorayaki',
   },
   'nobita': {
+    'name': 'Nobi Nobita',
     'age': 10,
     'species': 'Human',
     'favorite food': 'Sashimi and Mochi',
   },
   'dorami': {
+    'name': 'Dorami',
     'age': 8,
     'species': 'Robot cat',
     'favorite food': 'Melon pan',

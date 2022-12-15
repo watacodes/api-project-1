@@ -7,11 +7,11 @@ app.use(cors());
 
 app.use('/static', express.static('./static/'));
 
-app.use((req, res, next) => {
-  res.header('Access-Control_Allow-Origin', '*')
-  res.header('Access-Conrol-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header('Access-Control_Allow-Origin', '*')
+//   res.header('Access-Conrol-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//   next();
+// });
 
 const doraemon = {
   'doraemon': {

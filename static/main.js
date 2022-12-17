@@ -1,7 +1,4 @@
-console.log('hello');
-
 const submitButton = document.querySelector('.search-btn');
-
 
 submitButton.addEventListener('click', apiRequest);
 
